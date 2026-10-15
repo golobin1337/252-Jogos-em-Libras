@@ -1,8 +1,8 @@
 // ===== LINKS DE CHECKOUT =====
 // Substitua pelos links da sua plataforma (Hotmart, Kiwify, Eduzz etc.)
 const CHECKOUT_LINKS = {
-  basico: "#",
-  completo: "#",
+  basico: "https://pay.wiapy.com/J3o6i8aOSdpO",
+  completo: "https://pay.wiapy.com/FDiD1xL5q7iN",
 };
 
 document.querySelectorAll("[data-checkout]").forEach((btn) => {

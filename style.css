@@ -416,15 +416,18 @@ ul { list-style: none; }
 .carousel-block { margin-top: 56px; }
 .container + .carousel-block { margin-top: 0; }
 .carousel-block--inline { margin: 0 0 36px; }
-.carousel-block--inline .slide { aspect-ratio: 2 / 3; } /* páginas dos jogos em retrato */
+.carousel-block--inline .slide { aspect-ratio: 2 / 3; width: 330px; } /* páginas dos jogos em retrato */
+@media (max-width: 640px) {
+  .carousel-block--inline .slide { width: 270px; }
+}
 
 /* Depoimentos (prints): altura livre para prints de tamanhos diferentes */
 .carousel:has(.slide--depo) .carousel__track { align-items: center; }
-.slide--depo { width: 290px; aspect-ratio: auto; }
+.slide--depo { width: 400px; aspect-ratio: auto; background: #12233f; }
 .slide--depo img { height: auto; object-fit: contain; }
 .slide--depo.slide--ph { aspect-ratio: 3 / 4; }
 @media (max-width: 640px) {
-  .slide--depo { width: 240px; }
+  .slide--depo { width: 300px; }
 }
 .carousel-block--inline .carousel { margin: 0 -20px; } /* encosta nas bordas da tela no mobile */
 .carousel-title {
@@ -718,6 +721,15 @@ ul { list-style: none; }
   box-shadow: 0 14px 30px -10px rgba(16, 185, 129, .6);
   animation: soft-pulse 2.2s ease-in-out infinite !important;
 }
+.plan .btn--gradient { white-space: nowrap; }
+@media (max-width: 640px) {
+  .plan .btn--gradient {
+    font-size: clamp(.78rem, 3.6vw, 1.05rem);
+    padding: 17px 14px;
+    gap: 8px;
+    letter-spacing: 0;
+  }
+}
 .btn--gradient:hover { filter: brightness(1.07); animation-play-state: paused !important; }
 
 @keyframes soft-pulse {
@@ -923,7 +935,8 @@ ul { list-style: none; }
 @media (max-width: 960px) {
   .mock { height: 380px; }
   .features, .bonuses { grid-template-columns: repeat(2, 1fr); }
-  .plans { grid-template-columns: 1fr; max-width: 520px; }
+  .plans { grid-template-columns: 1fr; max-width: 520px; gap: 40px; }
+  .plan--featured { order: -1; } /* no celular, o Plano Completo aparece primeiro */
 }
 
 @media (max-width: 640px) {
