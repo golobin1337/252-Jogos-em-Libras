@@ -415,6 +415,17 @@ ul { list-style: none; }
 .section--showcase { background: #f8fafc; overflow: hidden; }
 .carousel-block { margin-top: 56px; }
 .container + .carousel-block { margin-top: 0; }
+.carousel-block--inline { margin-top: 44px; }
+
+/* Depoimentos (prints): altura livre para prints de tamanhos diferentes */
+.carousel:has(.slide--depo) .carousel__track { align-items: center; }
+.slide--depo { width: 290px; aspect-ratio: auto; }
+.slide--depo img { height: auto; object-fit: contain; }
+.slide--depo.slide--ph { aspect-ratio: 3 / 4; }
+@media (max-width: 640px) {
+  .slide--depo { width: 240px; }
+}
+.carousel-block--inline .carousel { margin: 0 -20px; } /* encosta nas bordas da tela no mobile */
 .carousel-title {
   text-align: center;
   font-size: clamp(1.3rem, 3vw, 1.7rem);
