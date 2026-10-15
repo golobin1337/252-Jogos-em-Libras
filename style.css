@@ -423,11 +423,11 @@ ul { list-style: none; }
 
 /* Depoimentos (prints): altura livre para prints de tamanhos diferentes */
 .carousel:has(.slide--depo) .carousel__track { align-items: center; }
-.slide--depo { width: 400px; aspect-ratio: auto; background: #12233f; }
-.slide--depo img { height: auto; object-fit: contain; }
-.slide--depo.slide--ph { aspect-ratio: 3 / 4; }
+.slide.slide--depo { width: 400px; aspect-ratio: auto; height: auto; background: #12233f; }
+.slide.slide--depo img { height: auto; object-fit: contain; }
+.slide.slide--depo.slide--ph { aspect-ratio: 3 / 4; }
 @media (max-width: 640px) {
-  .slide--depo { width: 300px; }
+  .slide.slide--depo { width: 300px; }
 }
 .carousel-block--inline .carousel { margin: 0 -20px; } /* encosta nas bordas da tela no mobile */
 .carousel-title {
