@@ -900,25 +900,49 @@ ul { list-style: none; }
   background: var(--primary-deep);
   color: rgba(255,255,255,.9);
   text-align: center;
-  padding: 40px 0 110px;
+  padding: 40px 0;
 }
 .footer__small { font-size: .85rem; opacity: .7; margin-top: 8px; max-width: 700px; margin-left: auto; margin-right: auto; }
 
-/* ============ STICKY CTA ============ */
-.sticky-cta {
-  display: none;
-  position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 50;
-  text-align: center; text-decoration: none;
-  font-family: var(--font-title); font-weight: 800; font-size: 1.05rem;
+/* ============ BARRA FIXA DA OFERTA ============ */
+.offer-bar {
+  position: fixed; z-index: 60;
+  left: 50%; bottom: 12px;
+  width: calc(100% - 24px); max-width: 560px;
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  background: linear-gradient(135deg, var(--primary-deep), var(--primary-dark));
   color: #fff;
+  border-radius: 20px;
+  padding: 12px 12px 12px 20px;
+  box-shadow: 0 16px 40px -10px rgba(74, 29, 150, .6);
+  transform: translate(-50%, 160%);
+  transition: transform .4s ease;
+}
+.offer-bar.is-visible { transform: translate(-50%, 0); }
+.offer-bar__info { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+.offer-bar__title { font-size: .95rem; font-weight: 800; }
+.offer-bar__from { font-size: .8rem; opacity: .85; }
+.offer-bar__from s { opacity: .8; }
+.offer-bar__price { font-family: var(--font-title); font-size: 1.35rem; font-weight: 800; color: var(--yellow); line-height: 1.1; }
+.offer-bar__btn {
+  flex-shrink: 0;
+  font-family: var(--font-title); font-weight: 800; font-size: 1rem;
+  color: #fff; text-decoration: none; white-space: nowrap;
   background: linear-gradient(135deg, var(--green), var(--green-2));
   border-bottom: 4px solid var(--green-deep);
-  padding: 14px; border-radius: 999px;
-  box-shadow: 0 10px 30px -6px rgba(0,0,0,.35);
-  transform: translateY(150%);
-  transition: transform .35s ease;
+  padding: 13px 22px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px -6px rgba(16, 185, 129, .6);
+  transition: transform .2s, filter .2s;
 }
-.sticky-cta.is-visible { transform: translateY(0); }
+.offer-bar__btn:hover { transform: translateY(-2px); filter: brightness(1.06); }
+body.has-offer-bar .footer { padding-bottom: 120px; }
+
+@media (max-width: 380px) {
+  .offer-bar { padding-left: 14px; gap: 10px; }
+  .offer-bar__title { font-size: .85rem; }
+  .offer-bar__btn { padding: 12px 14px; font-size: .9rem; }
+}
 
 /* ============ REVEAL ============ */
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
@@ -955,5 +979,4 @@ ul { list-style: none; }
   .guarantee { flex-direction: column; text-align: center; padding: 32px 22px; gap: 26px; }
   .plan { padding: 32px 20px; }
   .plan--featured { padding-top: 44px; }
-  .sticky-cta { display: block; }
 }

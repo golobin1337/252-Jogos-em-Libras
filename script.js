@@ -100,20 +100,22 @@ if ("IntersectionObserver" in window) {
   revealEls.forEach((el) => el.classList.add("is-visible"));
 }
 
-// ===== CTA FIXO NO MOBILE =====
-(function stickyCta() {
-  const cta = document.getElementById("stickyCta");
-  const hero = document.querySelector(".hero");
-  const offers = document.getElementById("ofertas");
-  if (!cta || !hero || !offers) return;
+// ===== BARRA FIXA DA OFERTA =====
+// Aparece quando o card do Plano Básico (R$ 10) entra na tela e continua depois dele.
+(function offerBar() {
+  const bar = document.getElementById("offerBar");
+  const basic = document.querySelector(".plan:not(.plan--featured)");
+  if (!bar || !basic) return;
 
   const update = () => {
-    const pastHero = hero.getBoundingClientRect().bottom < 0;
-    const r = offers.getBoundingClientRect();
-    const onOffers = r.top < window.innerHeight && r.bottom > 0;
-    cta.classList.toggle("is-visible", pastHero && !onOffers);
+    const show = basic.getBoundingClientRect().top < window.innerHeight * 0.6;
+    bar.classList.toggle("is-visible", show);
+    bar.setAttribute("aria-hidden", String(!show));
+    bar.querySelector("a").tabIndex = show ? 0 : -1;
+    document.body.classList.toggle("has-offer-bar", show);
   };
   window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
   update();
 })();
 
